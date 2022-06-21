@@ -1,0 +1,52 @@
+env:
+  browser: true
+  es2021: true
+  node: true
+  'vue/setup-compiler-macros': true
+extends:
+  - eslint:recommended
+  - plugin:vue/essential
+  - prettier
+  - plugin:prettier/recommended
+  - plugin:@typescript-eslint/recommended
+parserOptions:
+  ecmaVersion: 2020
+  parser: '@typescript-eslint/parser'
+  sourceType: module
+parser: 'vue-eslint-parser'
+plugins:
+  - vue
+  - '@typescript-eslint'
+rules:
+  # 缩进 tab
+  indent:
+    - error
+    - tab
+  # 字符单引号
+  quotes:
+    - error
+    - single
+  # 尾部分号
+  semi:
+    - error
+    - never
+  # 支持单个template中多个一级标签
+  vue/no-multiple-template-root: off
+  # 处理v-model后方参数问题
+  vue/no-v-model-argument: off
+  # 组件名称检查
+  vue/multi-word-component-names:
+    - error
+    - ignores:
+        - Index
+        - Manage
+        - Add
+        - update
+        - Detail
+        - Approval
+        - Generate
+        - Login
+        - Dashboard
+        - Exception500
+        - Exception404
+        - Exception403

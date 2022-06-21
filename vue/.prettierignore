@@ -1,0 +1,9 @@
+node_modules
+.vscode
+.idea
+dist
+/public
+.eslintrc.js
+*.yml
+*.yaml
+*.md
