@@ -93,6 +93,8 @@ const submitForm = async () => {
 		loginFormModel.loginButtonName = '登录'
 	}
 }
+
+console.log(111)
 </script>
 
 <style lang="scss" scoped>
