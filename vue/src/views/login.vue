@@ -96,6 +96,7 @@ const submitForm = async () => {
 
 console.log(3333)
 console.log(222)
+console.log(123)
 </script>
 
 <style lang="scss" scoped>
